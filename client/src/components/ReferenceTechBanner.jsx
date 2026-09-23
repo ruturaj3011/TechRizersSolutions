@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useModal } from '../context/ModalContext';
+import { getAssetUrl } from '../utils/assetUrl';
 
 export default function ReferenceTechBanner() {
   const { openProjectModal } = useModal();
@@ -105,12 +106,12 @@ export default function ReferenceTechBanner() {
             <div className="tech-banner-brand-col">
               <div className="banner-logo-wrapper">
                 <img
-                  src="/assets/techrizers-logo.jpg"
+                  src={getAssetUrl('assets/techrizers-logo.jpg')}
                   alt="TechRizers Metallic 3D Logo"
                   className="banner-brand-logo-img"
                   onError={(e) => {
                     // Fallback to square mark if needed
-                    e.currentTarget.src = '/assets/techrizers-mark-square.png';
+                    e.currentTarget.src = getAssetUrl('assets/techrizers-mark-square.png');
                   }}
                 />
                 <div className="banner-brand-text">

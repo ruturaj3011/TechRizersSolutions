@@ -4,6 +4,7 @@ import ThreeHeroCanvas from '../components/ThreeHeroCanvas';
 import Card3D from '../components/Card3D';
 import FAQAccordion from '../components/FAQAccordion';
 import { useModal } from '../context/ModalContext';
+import { getAssetUrl } from '../utils/assetUrl';
 
 const STORY_STEPS = [
   {
@@ -261,7 +262,7 @@ export default function About() {
             <h2 className="heading-large">Technology With Purpose.</h2>
             <div style={{ marginTop: '24px' }}>
               <img
-                src="/assets/techrizers-logo.jpg"
+                src={getAssetUrl('assets/techrizers-logo.jpg')}
                 alt="TechRizers - Technology • Innovation • Growth"
                 className="about-brand-img"
               />
