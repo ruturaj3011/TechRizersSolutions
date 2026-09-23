@@ -46,7 +46,7 @@ export default function Layout({ children }) {
 			<header className={`header ${scrolled ? 'scrolled' : ''}`}>
 				<div className="container nav">
 					<Link className="brand" to="/" title="TechRizers · Technology, Innovation, Growth">
-						<img src={getAssetUrl('assets/techrizers-mark-square.png')} alt="TechRizers Mark" className="brand-logo-img" />
+						<img src={getAssetUrl('assets/techrizers-logo.jpg')} alt="TechRizers Logo" className="brand-logo-img" />
 						<span>
 							TechRizers<span className="accent-dot">.</span>
 						</span>

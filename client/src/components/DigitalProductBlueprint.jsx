@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { getAssetUrl } from '../utils/assetUrl';
 
 /**
  * DigitalProductBlueprint
@@ -149,6 +150,11 @@ export default function DigitalProductBlueprint({ height = 440 }) {
           <span className="b-dot" />
           <span className="b-dot" />
           <span className="b-dot" />
+          <img
+            src={getAssetUrl('assets/techrizers-logo.jpg')}
+            alt="TechRizers"
+            style={{ width: '16px', height: '16px', borderRadius: '4px', objectFit: 'cover', marginLeft: '6px' }}
+          />
           <span className="blueprint-sys-tag">ARCHITECTURE // BLUEPRINT</span>
         </div>
         <div className="blueprint-status-indicator">
