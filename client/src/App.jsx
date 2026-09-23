@@ -23,7 +23,7 @@ export default function App() {
     <ThemeProvider>
       <AuthProvider>
         <ModalProvider>
-          <BrowserRouter>
+          <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Layout>
               <Routes>
                 <Route path="/" element={<Home />} />
