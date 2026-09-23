@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';export default mongoose.model('CaseStudy',new mongoose.Schema({title:String,slug:{type:String,unique:true},category:String,description:String,technologies:[String],outcome:String,image:String,status:{type:String,default:'active'}},{timestamps:true}));

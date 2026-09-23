@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';export default mongoose.model('Testimonial',new mongoose.Schema({clientName:String,role:String,company:String,testimonial:String,rating:Number,status:{type:String,default:'active'}},{timestamps:true}));

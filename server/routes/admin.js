@@ -1,0 +1,1 @@
+import {Router} from 'express';import {stats} from '../controllers/admin.js';import {auth,roles} from '../middleware/auth.js';const r=Router();r.get('/stats',auth,roles('admin','editor'),stats);export default r;

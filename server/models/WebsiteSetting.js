@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';export default mongoose.model('WebsiteSetting',new mongoose.Schema({companyName:String,email:String,phone:String,whatsapp:String,address:String,socialLinks:{type:Object},seoTitle:String,seoDescription:String},{timestamps:true}));

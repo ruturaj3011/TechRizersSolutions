@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';export default mongoose.model('Service',new mongoose.Schema({name:String,slug:{type:String,unique:true},description:String,icon:String,status:{type:String,default:'active'},order:Number,capabilities:[String],packages:[{name:String,price:String}]},{timestamps:true}));

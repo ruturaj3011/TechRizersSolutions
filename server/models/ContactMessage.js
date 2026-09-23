@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';export default mongoose.model('ContactMessage',new mongoose.Schema({name:String,email:String,phone:String,company:String,projectType:String,budget:String,timeline:String,message:String,status:{type:String,enum:['new','read','archived'],default:'new'}},{timestamps:true}));
